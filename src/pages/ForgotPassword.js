@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const PaymentsPage = () => {
+export const ForgotPassword = () => {
     return (
         <div>
-            PaymentsPage
+            ForgotPassword
         </div>
     )
 }

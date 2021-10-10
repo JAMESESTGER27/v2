@@ -4,25 +4,28 @@ import {
     Switch,
     Route,
   } from "react-router-dom";
-import { Navbar } from '../components/Navbar';
-import { Dashboard } from '../pages/Dashboard';
+import { AuthProvider } from '../context/AuthContext';
+import { Crud } from '../pages/Crud';
+import { ForgotPassword } from '../pages/ForgotPassword';
 import { LoginPage } from '../pages/LoginPage';
 import { NotFounds404 } from '../pages/NotFounds404';
-import { PaymentsPage } from '../pages/PaymentsPage';
-import { RegisterPage } from '../pages/RegisterPage';
+import { Signup } from '../pages/Signup';
+import { UpdateProfilePage } from '../pages/UpdateProfilePage';
 import { PrivateRoute } from './PrivateRoute';
 export const AppRouter = () => {
     return (
         <Router>
-            <Navbar/>
-            <Switch>
+            <AuthProvider>
+              <Switch>
                 <Route exact path="/" component={LoginPage}/>
+                <PrivateRoute exact path="/crud" component={Crud}/>
+                <PrivateRoute path='/updateprofile' component={UpdateProfilePage} />
+                <Route exact path="/signup" component={Signup}/>
                 <Route exact path="/login" component={LoginPage}/>
-                <PrivateRoute exact path="/dashboard" component={Dashboard}/>
-                <Route exact path="/register" component={RegisterPage}/>
-                <Route exact path="/payments" component={PaymentsPage}/>
+                <Route exact path="/forgorpassword" component={ForgotPassword}/>
                 <Route  path="*" component={NotFounds404}/>
-            </Switch>
+              </Switch>
+            </AuthProvider>
         </Router>
     )
 }

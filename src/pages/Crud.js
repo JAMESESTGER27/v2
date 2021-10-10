@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const RegisterPage = () => {
+export const Crud = () => {
     return (
         <div>
-            RegisterPage
+            crud
         </div>
     )
 }

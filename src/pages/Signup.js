@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Dashboard = () => {
+export const Signup = () => {
     return (
         <div>
-            Dashboard
+            RegisterPage
         </div>
     )
 }

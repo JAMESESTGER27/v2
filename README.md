@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Para loguearte
+
+email: test@test.com
+password: 123456789
+
+
 Primero instala las dependencias
 
 ## `npm install`

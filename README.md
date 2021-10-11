@@ -2,9 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Para arracar la Api Fake
+Primero instala las dependencias
 
-En este directorio para arrancar
+## `npm install`
+
+Luego
+
+## Para iniciar la app
+
+## `npm start`
+
+## Para arracar la Api Fake
 
 ### `npm run fake-api`
 

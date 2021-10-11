@@ -1,0 +1,23 @@
+.nav{
+    background-color: teal;
+    min-height: 3rem;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 717px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 2;
+}
+.title{
+    margin-right: 5px;
+    font-weight: bold;
+}

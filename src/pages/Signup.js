@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
 import { Link, useHistory } from "react-router-dom";
 import style from "../styles/login.module.css";
+import logo from "../assets/logo.png"
 export const Signup = () => {
 	const emailRef = useRef()
 	const passwordRef = useRef()
@@ -41,7 +42,7 @@ export const Signup = () => {
 
 			<div className={style.form}>
 				<div className={style.thumbnail}>
-					{/* <img src={register} alt="register" /> */}
+				<img src={logo} alt="logo" />
 				</div>
 				<form onSubmit={handleSubmit} className={style.login__form}>
 					<input 

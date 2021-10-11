@@ -51,7 +51,7 @@ export const LoginPage = () => {
 					type="password"
 					className={styles.input_field} 
 					ref={passwordRef} 
-					placeholder="username" />
+					placeholder="password" />
 					<button type="submit" disabled={loading} className={styles.input}>Ingresar</button>
 					<p>Hey! no tienes cuenta? <Link to='/signup'><span>Registrate</span></Link></p>
 					<p>Olvidaste la contraseña verdad? Ingresa aqui por favor. <Link to='/forgorpassword'><span>Recuperar</span></Link></p>

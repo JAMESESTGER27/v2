@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
 import styles from "../styles/login.module.css"
+import logo from "../assets/logo.png"
 export const UpdateProfilePage = () => {
 
 	const emailRef = useRef()
@@ -54,7 +55,7 @@ export const UpdateProfilePage = () => {
 
 			<div className={styles.form}>
 				<div className={styles.thumbnail}>
-					{/* <img src={logo} alt="logo" /> */}
+					<img src={logo} alt="logo" />
 				</div>
 				<form onSubmit={handleSubmit} className={styles.login__form}>
 					<input
@@ -79,7 +80,7 @@ export const UpdateProfilePage = () => {
 						required
 						/>
 					<button type="submit" disabled={loading} className={styles.input}>Actualizar</button>
-					<p><Link to='/login'><span>Regresar</span></Link></p>
+					<p><Link to='/crud'><span>Regresar</span></Link></p>
 				</form>
 			</div>
 		</div>

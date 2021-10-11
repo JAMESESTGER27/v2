@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import styles from "../styles/login.module.css"
+import logo from "../assets/logo.png"
 export const ForgotPassword = () => {
 
 	const emailRef = useRef()
@@ -9,6 +10,7 @@ export const ForgotPassword = () => {
 	const [error, setError] = useState('')
 	const [loading, setLoading] = useState(false)
 	const [message, setMessage] = useState('')
+	console.log(message)
 
 	const handleSubmit = async(e) =>{
 		e.preventDefault();
@@ -37,7 +39,7 @@ export const ForgotPassword = () => {
 			</div>
 			<div className={styles.form}>
 				<div className={styles.thumbnail}>
-					{/* <img src={logo} alt="logo" /> */}
+					<img src={logo} alt="logo" />
 				</div>
 				<form onSubmit={handleSubmit} className={styles.login__form}>
 					<input
